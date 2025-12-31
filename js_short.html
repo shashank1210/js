@@ -1,0 +1,28 @@
+function displayCarDetails(){
+var d={
+Innova:"Innova-900000-2016",
+Dzire:"Dzire-700000-2017",
+i20:"i20-500000-2013",
+i10:"i10-400000-2016"
+};
+var x=document.getElementById("SelectCar").value;
+document.getElementById("CarDetail").innerHTML=d[x];
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="index.js"></script>
+</head>
+<body>
+<label>Please Choose a Car to get its Details</label>
+<select id="SelectCar" onchange="displayCarDetails()">
+<option>Innova</option>
+<option>Dzire</option>
+<option>i20</option>
+<option>i10</option>
+</select>
+<p id="CarDetail"></p>
+</body>
+</html>
